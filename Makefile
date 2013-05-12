@@ -351,13 +351,7 @@ MODFLAGS	= -DMODULE \
 		  -march=armv7-a \
 		  -mfpu=neon \
 		  -mtune=cortex-a9 \
-		  -Os \
-		  -fgcse-after-reload \
-		  -fipa-cp-clone \
-		  -fpredictive-commoning \
-		  -fsched-spec-load \
-		  -funswitch-loops \
-		  -fvect-cost-model
+		  -Os
 ifdef CONFIG_GCC_48_FIXES
   MODFLAGS	+=	-Wno-sizeof-pointer-memaccess
 endif
@@ -367,13 +361,7 @@ LDFLAGS_MODULE  = -T $(srctree)/scripts/module-common.lds
 CFLAGS_KERNEL	= -march=armv7-a \
 		  -mfpu=neon \
 		  -mtune=cortex-a9 \
-		  -Os \
-		  -fgcse-after-reload \
-		  -fipa-cp-clone \
-		  -fpredictive-commoning \
-		  -fsched-spec-load \
-		  -funswitch-loops \
-		  -fvect-cost-model
+		  -Os
 ifdef CONFIG_GCC_48_FIXES
   CFLAGS_KERNEL	+=	-Wno-sizeof-pointer-memaccess
 endif
