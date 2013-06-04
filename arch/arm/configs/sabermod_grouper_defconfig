@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/arm 3.2.42 Kernel Configuration
+# Linux/arm 3.2.46 Kernel Configuration
 #
 CONFIG_ARM=y
 CONFIG_HAVE_PWM=y
@@ -352,6 +352,7 @@ CONFIG_TEGRA_PLLM_RESTRICTED=y
 CONFIG_TEGRA_LP2_ARM_TWD=y
 CONFIG_TEGRA_SLOW_CSITE=y
 # CONFIG_TEGRA_PREINIT_CLOCKS is not set
+CONFIG_GROUPER_HARDBOOT_RECOVERY=y
 
 #
 # Processor Type
@@ -495,7 +496,9 @@ CONFIG_CMDLINE="tegra_wdt.heartbeat=30"
 CONFIG_CMDLINE_EXTEND=y
 # CONFIG_CMDLINE_FORCE is not set
 # CONFIG_XIP_KERNEL is not set
-# CONFIG_KEXEC is not set
+CONFIG_KEXEC=y
+CONFIG_ATAGS_PROC=y
+CONFIG_KEXEC_HARDBOOT=y
 # CONFIG_CRASH_DUMP is not set
 # CONFIG_AUTO_ZRELADDR is not set
 
